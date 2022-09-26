@@ -1,0 +1,397 @@
+body
+{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.menuBar
+{
+    display: flex;
+    background-color: #406882;
+    height: 50px;
+    align-items: stretch;
+    justify-content:start;
+
+
+}
+
+.item1, .item2, .item3
+{
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FEF9EF;
+    padding-left: 15px; 
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: medium;
+}   
+
+.item1:hover, .item2:hover, .item3:hover {
+    background-color: #1A374D;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    
+   
+  }
+
+.siteName
+{
+
+    font-family: 'Amiri', serif;
+    font-size: 30px;
+    color: white;
+    padding-top: 1px;
+    padding-left: 15px; 
+    padding-right: 15px;
+    width: 350px;
+    text-align: center;
+
+}
+
+/* Presentation Section: About Us */
+.aboutUs > *
+{
+    
+    text-align: center;
+    color: #1A374D;
+
+}
+.qamrunUrdu
+{
+    font-size: 100px;
+    font-family: 'Amiri', serif;
+}
+
+.presentation
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+.details
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.team, .clients
+{
+    color: #1A374D; 
+    font-family: 'Amiri', serif;
+    font-size: 35px;
+    border: 1px solid #1A374D; 
+    border-radius: 15px;
+    width: 200px;
+    padding: 1px 5px;
+    text-decoration: none;
+}
+
+.team:hover, .clients:hover
+{
+    color: white; 
+    background-color: #1A374D;
+}
+.team{
+    justify-self: end;
+    align-self: center;
+    margin-right: 25px; 
+}
+.clients
+{
+    justify-self: start;
+    align-self: center;
+    margin-left: 25px;
+
+}
+
+/* End of Presentation Section About us */
+
+/* Main section where we difine services and hiring */ 
+
+.main
+{
+    display: grid;
+    grid-template-rows: 93vh 100vh 100vh;
+}
+
+
+.aboutUs
+{
+    background-color: white;
+    
+}
+
+
+
+/* Our services section */
+.ourServices
+{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.webApp, .softWaredev, .construction
+{
+    display: grid;
+    text-decoration: none;
+    grid-template-rows: 20% 150px 50%;
+    margin-left: 5px;
+    border-top: 2px solid #1A374D;
+    border-bottom: 2px solid #1A374D;
+    background-color: #f1e0aca3;
+}
+
+.webApp:hover, .softWaredev:hover, .construction:hover
+{
+    border:2px solid #1A374D;
+    border-radius: 2%;
+    background-color: white;
+ 
+}
+
+    .webAppTitle, .softWareTitle, .constructionTitle
+    {
+        align-self: center;
+        justify-self: center;
+        font-size: 25px;
+        color: #1A374D;
+        margin: auto 10px;
+    }
+
+    .webAppIllustration, .softWareIllustration, .constructionIllustration
+    {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 1px dotted #1A374D;
+    justify-self: center;
+    }
+
+
+
+    .webAppText, .softWareText, .constructionText
+    {
+        padding: 5px 10px; 
+        align-self: baseline;
+        color: #1A374D;
+    }
+
+
+/* End of our services section */
+
+/*Footer and Hiring Section*/
+.footer
+{
+
+    display: grid;
+    margin-top: 10px;
+    background-color: white;
+    grid-template-rows: auto 100px;
+}
+
+.hiring
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.hiringMessage
+{
+    align-self: start;
+    margin: 0 10px;
+    grid-column: 1/3;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #1A374D;
+}
+
+.hiringTitle
+{
+    font-size: 35px;
+    color: #1A374D;
+    margin: auto 10px;
+}
+
+.apply 
+{
+    display:grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.apply a 
+{
+    color: #1A374D; 
+    font-family: 'Amiri', serif;
+    font-size: 25px;
+    border: 1px solid #1A374D; 
+    border-radius: 15px;
+    width: 300px;
+    padding: auto auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+.apply a:hover
+{
+    color: white; 
+    background-color: #1A374D;
+}
+
+.followUs
+{
+    background-color: #1A374D;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+
+.followUs a{
+    color: white; 
+    text-decoration:none;
+    font-size: 20px;
+}
+
+/* ------------------------------------ SMALL SCREEN DEVICES----------------------------------*/
+
+@media only screen and (max-width: 850px) {
+
+a.item1, a.item2, a.item3
+{
+    visibility: hidden;
+}
+
+.main
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+}
+
+.ourServices
+{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr;
+
+}
+.webApp, .softWaredev, .construction
+{
+    display: grid;
+    text-decoration: none;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 30% 70%;
+    margin-left: 5px;
+    border-top: 2px solid #1A374D;
+    border-bottom: 2px solid #1A374D;
+    background-color: #f1e0aca3;
+}
+
+.webAppTitle, .softWareTitle, .constructionTitle
+{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-self: stretch;
+}
+
+.webAppIllustration, .softWareIllustration, .constructionIllustration
+{
+width: 100px;
+height: 100px;
+align-self: center;
+
+}
+.webAppText, .softWareText, .constructionText
+{
+    align-self: center;
+
+}
+
+
+.qamrunUrdu
+{
+    font-size: 50px;
+    font-family: 'Amiri', serif;
+}
+
+.presentation
+{
+
+    font-size: 20px;
+    align-self: stretch;
+    justify-self: stretch;
+
+}
+
+.details
+{
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.team, .clients
+{
+    color: #1A374D; 
+    font-size: 20px;
+    justify-self: center;
+    margin : 5px auto;
+}
+
+.footer
+{
+
+    grid-template-rows: auto 50px;
+}
+
+
+.hiring
+{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+}
+
+.apply a 
+{
+
+    font-size: 20px;
+    width: 200px;
+    padding: auto auto;
+    margin: 5px auto;
+
+}
+.apply
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    align-items: center;
+    
+}
+
+.contact
+{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.followUs a{
+
+    font-size: 15px;
+}
+
+  }
